@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+
+  <div class="page-content">
+    <div class="wrapper">
+      <div class="post">
+        <header class="post-header">
+          <h1 class="post-title">{{ page.title }}</h1>
+          <h5 class="post-description">{{ page.description }}</h5>
+        </header>
+
+        <article class="post-content">
+        {{ content }}
+        </article>
+      </div>
+    </div>
+
+<div class="social">
+  <span class="contacticon center">
+    <a href="https://github.com/P3trur0" target="_blank">
+      <i class="fa fa-github-square"></i>
+    </a>
+  </span>
+</div>
+  </div>
+
+  {% include footer.html %}
+
+</body>
+
+</html>
+
+
+
+
+
